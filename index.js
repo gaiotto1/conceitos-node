@@ -32,7 +32,7 @@ server.get('/users/:id', (req, res) => {
 
 // Request body = { "nome": "Julio", "email": "teste@gmail.com" }
 server.post('/users', checkUserExists, (req, res) => {
-  const { name, email } = req.body;
+  const { name, email } = req.body; 
   res.json({
     "Nome": name,
     "E-mail": email
